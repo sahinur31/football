@@ -145,7 +145,8 @@ footer area styles
     font-size: 18px;
     color: #000;
     padding: 50px 0;
-}.footer-icon a i {
+}
+.footer-icon a i {
     background-color: #E7E7E8;
     width: 32px;
     height: 32px;
@@ -159,8 +160,11 @@ footer area styles
    color: #969BAB;
    
 }
+.footer-icon {
+    margin-bottom: 15px;
+}
 .footer-icon a:hover i{
-   color: #fff;
+    color: #fff;
     background-color: #969BAB;
 }
 
