@@ -1,6 +1,10 @@
-/* font import style */
+/* ---------------------
+ font import style 
+ ----------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-/* common styles or utilities */
+/* ----------------------
+common styles or utilities 
+------------------------- */
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +19,9 @@ body {
     width: 1050px;
     margin:  0 auto;
 }
-/* slider-area style */
+/* ---------------------
+ slider-area style
+ ---------------------- */
 .slider-area {
     background-color: #2D25A0;
     padding: 30px 0;
@@ -55,6 +61,7 @@ a.btn-link i {
 .sliders {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px;
 }
 .slider-right img {
     width: 555px;
@@ -66,7 +73,9 @@ a.btn-link i {
     color: #fff;
     line-height: 80px;
 }
-/* players blog styles */
+/* ---------------------------
+players blog styles 
+------------------------------ */
 .top-players-blog {
     padding: 60px 0;
 }
@@ -77,7 +86,7 @@ a.btn-link i {
     grid-row-gap: 20px;
 }
 .player-blog {
-    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    box-shadow:#ccc 0px 4px 14px 0px;
     padding: 20px;
     width: 300px;
 }
@@ -93,7 +102,9 @@ a.btn-link i {
     color: #6c6c6c;
     font-weight: 4000;
 }
-/* galleries styles */
+/* -----------------------------
+galleries styles 
+----------------------------------- */
 .top-match-gallery {
     padding: 50px 0;
 }
@@ -110,35 +121,10 @@ a.btn-link i {
 .gallery {
     position: relative;
 }
-.gallery:hover .gallery-overlay {
-    opacity: 1;
-    transform: scale(1);
-}
-.gallery:hover .gallery-icon {
-    transform: scale(1);
-}
-.gallery-icon {
-    position: absolute;
-    transform: scale(0);
-    transition: .5s;
-    color: white;
-    width: 100%;
-    height: 100%;
-}
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 82%;
-    height: 75%;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    transform: scale(0);
-    padding: 30px;
-    transition: .5s;
-}
-/* Sponsors style */
+
+/* -------------------
+ Sponsors style 
+ -------------------- */
 .section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -151,7 +137,9 @@ a.btn-link i {
 .sponsor {
     margin: 20px; 
 }
-/* footer area syles */
+/* ---------------------------
+footer area styles
+------------------------------ */
 .footer-area {
     text-align: center;
     font-size: 18px;
@@ -164,20 +152,25 @@ a.btn-link i {
     border-radius: 50%;
     text-align: center;
     line-height: 33px;
+    transition: .3s;
+    margin-bottom: 20px;
 }
 .footer-icon a {
    color: #969BAB;
-   transition: .3s;
+   
 }
-.footer-icon a:hover {
+.footer-icon a:hover i{
    color: #fff;
+    background-color: #969BAB;
 }
 
 /* ---------------------
     Media Queries 
------------------------*/
+----------------------- */
 
-/* Mobile Devices */
+/* -----------------------
+Mobile Devices 
+---------------------- */
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -192,8 +185,8 @@ a.btn-link i {
         margin-bottom: 40px;
     }
     .slider-left h1 {
-        font-size: 50px;
-        line-height: 64px;
+        font-size: 83px;
+        line-height: 103px;
     }
     .slider-right img {
         width: 100%;
